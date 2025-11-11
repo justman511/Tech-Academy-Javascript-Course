@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-color: gray;
+}
+
+div.main-container {
+    text-align: center;
+    margin-top: 70px;
+}
+
+h1 {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+div.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    padding: 2px;
+    margin: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+select {
+    border-radius: 10px;
+}
+
+form {
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+
+}
+
+/*style input*/ 
+input {
+    width: 450px;
+    height: 30px;
+
+}
+
+section {
+   
+    margin-top: 50px;
+    width: 0 auto;
+    height: auto;
+}
+
+button {
+    width: 20%;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}

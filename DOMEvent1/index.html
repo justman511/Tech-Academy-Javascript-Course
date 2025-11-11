@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./JS/main.js"></script>
+    <title>DOM Event</title>
+</head>
+<body>
+    <h1 id="heading">DOM Events</h1>
+    <p class="info">Hope you are enjoying 40 days of JavaScript</p>
+
+    <hr>
+    <h2>Event Handling</h2>
+    <button id="myBtn"  onclick="handleClick(event)">Click Me</button>
+    <button id="myBtn2">Click Me 2</button>
+
+    <button id="countBtn">Count++</button>
+
+
+    <hr>
+    <h2>Event Object</h2>
+    <input type="text" name="search" id="search-id" placeholder="Search...">
+
+    <hr>
+
+    
+
+    <!--Event Bubbling, Capturing and delegation -->
+    <h2 id="divSibling">Event Bubbling, Capturing and delegation</h2>
+    <div id="grandparent">
+        <div id="parent">
+            <button id="child">Click Me</button>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+
+    <hr>
+
+    <div id="father" style="padding: 30px; background-color: #cfd8dc;">
+        parent
+        <button id="son"style="margin: 10px;">Click Me</button>
+    </div>
+</body>
+</html>

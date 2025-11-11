@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer type="module" src="./JS/Library.js"></script>
+    <title>Library Management System</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Library Management System</h1>
+
+      <!--User Switcher-->
+      <div class="sub-container">
+        <label for="userSwitcher">Choose User View:
+        <select name="" id="userSwitcher">
+            <option value="member">Member View</option>
+           <option value="admin">Admin View</option>
+        </select>
+        </label>
+      </div>
+
+
+     <!--Book Entry Form-->
+
+     <section id="bookSection">
+        <h2>Add a New Book</h2>
+        <form action="" id="bookForm" class="formClass">
+            <div>
+                <label for="title">Title
+                <input type="text" id="title" required>
+                </label>
+            </div>
+            <div>
+                <label for="author">Author
+                 <input type="text" id="author" required>
+                </label>
+            </div>
+            <div>
+                <label for="genre">Genre
+                <input type="text" id="genre" required>
+                </label>
+            </div>
+            <div>
+            <button type="submit">
+                Add Book
+            </button>
+            </div>
+        </form>
+     </section>
+
+
+     <!--Available Books Section-->
+
+     <section id="availableSection">
+        <h2>Available Books</h2>
+        <ul id="bookList"></ul>
+     </section>
+
+
+     <!--Borrowed Books Section-->
+
+     <section id="borrowedSection">
+        <h2>Borrowed Book</h2>
+        <ul id="borrowedList"></ul>
+     </section>
+
+    </div>
+
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
