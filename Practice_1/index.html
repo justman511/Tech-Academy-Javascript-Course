@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice 1</h1>
+    <h2 class="Click">This text will change!</h2>
+    <h3 class="Click">This text will not change!</h3>
+    <button onclick="Hello_World_Function()">Click Me!</button>
+
+    <canvas id="ID_Name" width="500" height="250" 
+    style="border: 5px solid black;"></canvas>
+
+    <form action="" name="myForm">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--HTML Data Attributes-->
+    <h3>Characters</h3>
+    <h4>Click on a universe to see a character!</h4>
+    <ul>
+        <li onclick="displayType(this)" id="DC"
+        data-character-type="Batman">DC</li>
+        <li onclick="displayType(this)" id="Star_Wars"
+        data-character-type="Luke Skywalker">Star War</li>
+        <li onclick="displayType(this)" id="Marvel"
+        data-character-type="Thor">Marvel</li>
+        <li onclick="displayType(this)" id="Star_Trek"
+        data-character-type="Jean-Luc Picard">Star Trek</li>
+    </ul>
+
+</body>
+</html>
