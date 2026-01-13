@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+		<script type="text/javascript">
+
+			function getContent(){
+				//Step 1: Create XMLHttpRequest object
+				var xhr = new XMLHttpRequest(); 
+				//Step 2: Configure it: GET-request for the URL /ajax_content.txt
+				xhr.open("GET", "content.html", true);
+				//Step 3:  Send the request over the network
+				// This will be called after the response is received
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState === 4 && xhr.status === 200) {
+						document.getElementById("content").innerHTML = xhr.responseText;
+					}
+				};
+				// Step 4: Send the request
+				xhr.send();
+			}
+			
+		</script>
+</body>
+</html>
